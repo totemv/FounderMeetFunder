@@ -21,8 +21,6 @@
 	#Contact
 	#Media Queries
 	#Font-Face */
-
-
 /* #Typography
 ================================================== */
 
@@ -98,7 +96,6 @@ p, body {
 .dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg h5 {
 	color: #FFF;
 }
-
 
 
 /* #Buttons
@@ -424,7 +421,87 @@ p.s-proj-type {
 	max-height: 370px !important;
 }
 
+
 /* end expanded portfolio item */
+
+
+
+/* #Event
+================================================== */
+
+#event-intro {
+	width: 100%;
+	height: 400px;
+	text-align: center;
+}
+
+#event-intro h1 {
+	color: #FFF;
+}
+
+#event-intro .bg1 {
+	background: url(../images/bg1.jpg) 0 0 repeat;	
+	background-position: center center !important;
+	background-size: cover;
+	-webkit-background-size: cover;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: 400px;
+}
+
+.event-title {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	z-index: 300;
+	padding-top: 70px;
+}
+
+.event-intro-line {
+	position: relative;
+	z-index: 150;
+	border-top: 1px solid #ededed;
+	width: 670px;
+	margin: 0 auto 50px auto;
+}
+
+.event-title p {
+	font-size: 24px;
+	line-height: 30px;
+	color: #fff;
+	position: relative;
+	z-index: 150;
+}
+
+.event-social-intro {
+	margin-top: 45px;
+	position: relative;
+	z-index: 150;
+}
+
+.event-social-intro ul li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.event-social-intro a {
+	opacity: 0.7;
+}
+
+.event-social-intro a:hover {
+	opacity: 1;
+}
+
+.event-video {
+	width: 50%;
+	/*height: 300px;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /* filterable portfolio */
 

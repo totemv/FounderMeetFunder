@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html style="margin-top: 0 !important" lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <title>Techweek After Party</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <script type="text/javascript"></script>
+
+  <!-- layout styling -->
+
+  <link rel='stylesheet' id='base-css'  href='stylesheets/base.css' type='text/css' media='all' />
+
+  <link rel='stylesheet' id='layout-css'  href='stylesheets/layout.css' type='text/css' media='all' />
+
+  <link rel='stylesheet' id='style-css-css'  href='stylesheets/portfolio.css' type='text/css' media='all' />
+
+  <link rel='stylesheet' id='skeleton-css-css'  href='stylesheets/skeleton.css' type='text/css' media='all' />
+
+  <!-- fonts styling -->
+  <link rel='stylesheet' id='redux-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C600%2C600italic%7COswald%3A700&#038;ver=1457795825' type='text/css' media='all' />
+
+  <!-- jQuery script -->
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js'></script>
+  <!-- jQuery migrate script -->
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.0/jquery-migrate.min.js'></script>
+  <!-- jQuery cycle script -->
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/cyclejs-core/6.0.3/cycle.min.js'></script>
+  <!-- jQuery felxslider script -->
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/flexslider.min.css'></script>
+  <!-- jQuery backstretch script -->
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
+  <!-- jQuery mobile menu script -->
+  <script type='text/javascript' src='js/mobilemenu.js'></script>
+  <!-- jQuery flexslider script -->
+  <script type='text/javascript' src='js/flexslider.js'></script>
+  <!-- jQuery sticky script -->
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js'></script>
+  <!-- jQuery pretty photo -->
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/css/prettyPhoto.min.css'></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/prettyphoto/3.1.6/js/jquery.prettyPhoto.js'></script>
+  <!-- jQuery isotope photo -->
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script>
+
+  <style type='text/css'> 
+    #intro .bg1 { 
+      background-image: none; 
+      background-color: #000; 
+      opacity: 0.2; 
+    }  
+  </style> 
+</head>
+
+<body class="event">
+
+<div id="event-intro">
+  <div class="bg1"></div>
+  <div class="event-title">
+    <div class="event-intro-line"></div>
+      <h1 class="small">Techweek After Party</h2>
+      <div class="event-intro-line"></div>
+        <p>
+          @31TEN Lounge November 15th, 2015 6:00pm   
+        </p>
+        <div class="event-social-intro">
+        <ul>
+        </ul>
+      </div>
+    </div> <!-- end title -->
+</div>
+
+<div class="bg " id="about">
+  <div class="container">
+    
+    <div class="sixteen columns">
+    <h2>
+      <span class="lines">Founder Meets Funder</span>
+    </h2>
+  </div> <!-- end sixteen columns -->
+  <iframe class="event-video" height="315" src="https://www.youtube.com/embed/Y9ioqhg8O30" frameborder="0" allowfullscreen>  
+  </iframe>
+  <div class="clear"></div>
+    <p></p>
+    <div class="eight columns ">Founder Meet Funder focus on supporting entrepreneur growth by connecting them with mentors, influencers and investors within the community. A special social sphere is created due to the culture and diversity of experience brought along the way to encourage everyone to help one other's business growth.</div>
+    <div class="eight columns ">Founders: Whether established or simply looking for leads on how to get that business started, will be given the opportunity to meet people that may join them on their venture, gain advice on how to hack its growth, and will have the chance to get their businesses funded at these events.</div>
+  <div class="clear"></div>
+  <div style="text-align: center"><br/><div class="action"></div></div>
+</div>
+
+
+<!-- JS
+================================================== -->
+
+<!-- fancybox -->
+<script type="text/javascript">
+  function scrollTo(target) {
+    if(target != 0) {
+      var myArray = target.split('#');
+      var targetPosition = jQuery('#' + myArray[1]).offset().top;
+      jQuery('html,body').animate({ scrollTop: targetPosition}, 'slow');
+    }
+  }
+
+  jQuery(document).ready(function() {
+
+    /* carousel settings */
+
+    jQuery("#event-intro").backstretch([
+      'assets/images/31TenLounge.jpg',
+      'assets/images/TechweekSpeakers.jpg',
+      'assets/images/TechweekParty.jpg',
+
+    ], {
+      duration: 3000,
+      fade: 750
+    });
+
+    jQuery("nav").sticky({topSpacing:0});
+
+    /* This is basic - uses default settings */
+
+    jQuery("a[class^='prettyPhoto']").prettyPhoto({
+      social_tools: false,
+      theme: 'light_square'
+    });
+
+    /* Using custom settings */
+
+    jQuery('.proj-img').hover(function() {
+      jQuery(this).find('i').stop().animate({
+        opacity: 0.8
+      }, 'fast');
+      jQuery(this).find('a').stop().animate({
+        "top": "0"
+      });
+    }, function() {
+      jQuery(this).find('i').stop().animate({
+        opacity: 0
+      }, 'fast');
+      jQuery(this).find('a').stop().animate({
+        "top": "-600px"
+      });
+    });
+
+    jQuery('.flexslider').flexslider({
+      animation: "slide",
+      slideshow: true,
+      slideshowSpeed: 3500,
+      animationSpeed: 1000
+    });
+
+    jQuery('nav ul#menu-top-menu').mobileMenu({
+       defaultText: 'Navigate to...',
+       className: 'mobile-menu',
+       subMenuDash: '&ndash;'
+    });
+  });
+</script>
+
+</body>
+</html>
