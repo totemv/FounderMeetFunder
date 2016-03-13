@@ -67,11 +67,8 @@
       <h1>Founder Meet Funder</h2>
       <div class="intro-line"></div>
         <p>
-           Founder Meet Funder focuses on supporting entrepreneur growth by connecting them with mentors, influencers and investors within the community.          
+           Founder Meet Funder establishes entrepreneurial growth by connecting mentors, influencers and investors alike within the community.          
         </p>
-        <div class="social-intro">
-        <ul>
-        </ul>
       </div>
     </div> <!-- end title -->
 </div>
@@ -116,7 +113,7 @@
     <div class="container">
       <div class="sixteen columns">
       <h2>
-        <span class="lines"> Daniel Jang </span>
+        <span class="lines">Daniel Jang</span>
       </h2>
       </div>
       <div style="text-align: center;">
@@ -157,6 +154,21 @@
   }
 
   jQuery(document).ready(function() {
+
+    var dir = "assets/images/";
+    var fileextension = ".png";
+    $.ajax({
+        //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+        url: dir,
+        success: function (data) {
+          console.log('mark')
+            //List all .png file names in the page
+            $(data).find("a:contains(" + fileextension + ")").each(function () {
+                var filename = this.href.replace(window.location.host, "").replace("http://", "");
+                $("body").append("<img src='" + dir + filename + "'>");
+            });
+        }
+    });
 
     /* carousel settings */
 
