@@ -20,6 +20,8 @@
 
   <link rel='stylesheet' id='skeleton-css-css'  href='stylesheets/skeleton.css' type='text/css' media='all' />
 
+  <link rel='stylesheet' id='flexslider-css-css'  href='stylesheets/flexslider.css' type='text/css' media='all' />
+
   <!-- fonts styling -->
   <link rel='stylesheet' id='redux-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C600%2C600italic%7COswald%3A700&#038;ver=1457795825' type='text/css' media='all' />
 
@@ -45,13 +47,13 @@
   <!-- jQuery isotope photo -->
   <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script>
 
-  <style type='text/css'> 
-    #intro .bg1 { 
-      background-image: none; 
-      background-color: #000; 
-      opacity: 0.2; 
-    }  
-  </style> 
+  <style type='text/css'>
+    #intro .bg1 {
+      background-image: none;
+      background-color: #000;
+      opacity: 0.2;
+    }
+  </style>
 </head>
 
 <body class="home blog">
@@ -67,7 +69,7 @@
       <h1>Founder Meet Funder</h2>
       <div class="intro-line"></div>
         <p>
-           Founder Meet Funder focuses on supporting entrepreneur growth by connecting them with mentors, influencers and investors within the community.          
+           Founder Meet Funder focuses on supporting entrepreneur growth by connecting them with mentors, influencers and investors within the community.
         </p>
         <div class="social-intro">
         <ul>
@@ -109,6 +111,21 @@
     <div class="eight columns ">Founders: Whether established or simply looking for leads on how to get that business started, will be given the opportunity to meet people that may join them on their venture, gain advice on how to hack its growth, and will have the chance to get their businesses funded at these events.</div>
   <div class="clear"></div>
   <div style="text-align: center"><br/><div class="action"></div></div>
+</div>
+
+<!-- Events Carousel -->
+<h2><span class="lines">Past Events</span></h2>
+<div style='padding: 0px 64px 0px 64px;'>
+<div class="flexslider flex-pastevents">
+  <ul class="slides">
+    <li>
+      <img src="assets/images/techweek.png" />
+    </li>
+    <li>
+      <img src="assets/images/payitforward.jpg" />
+    </li>
+  </ul>
+</div>
 </div>
 
 <div id="separator_2" class="separator1">
@@ -187,6 +204,15 @@
     });
   });
 </script>
+
+<script type="text/javascript">
+		jQuery(".flex-pastevents").flexslider({
+				animation: "slide",
+				slideshow: true,
+				slideshowSpeed: 3500,
+				animationSpeed: 1000
+			});
+	</script>
 
 </body>
 </html>
