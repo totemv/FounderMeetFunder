@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <script type="text/javascript"></script>
+  <link rel="shortcut icon" href="assets/images/foundermeetfunder2_square_icon_M1H_icon.ico">
 
   <!-- layout styling -->
 
@@ -147,6 +147,7 @@
 
 <!-- fancybox -->
 <script type="text/javascript">
+
   function scrollTo(target) {
     if(target != 0) {
       var myArray = target.split('#');
@@ -180,22 +181,6 @@
     });
 
     /* Using custom settings */
-
-    jQuery('.proj-img').hover(function() {
-      jQuery(this).find('i').stop().animate({
-        opacity: 0.8
-      }, 'fast');
-      jQuery(this).find('a').stop().animate({
-        "top": "0"
-      });
-    }, function() {
-      jQuery(this).find('i').stop().animate({
-        opacity: 0
-      }, 'fast');
-      jQuery(this).find('a').stop().animate({
-        "top": "-600px"
-      });
-    });
 
     jQuery('.flexslider').flexslider({
       animation: "slide",
